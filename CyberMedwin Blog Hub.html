@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CyberMedwin Blog Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Header with badge */
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #0d6efd;
+      color: white;
+      padding: 30px 40px;
+      border-bottom: 5px solid #fd7e14;
+    }
+
+    .badge-box {
+      background-color: #000;
+      border-radius: 50%;
+      padding: 15px;
+      height: 120px;
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+    }
+
+    .badge-box img {
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .header-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .header-text p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    .search-bar {
+      margin: 30px auto;
+      max-width: 600px;
+    }
+
+    .search-bar input {
+      border: 2px solid #fd7e14;
+      border-radius: 5px;
+    }
+
+    .section-title {
+      color: #fd7e14;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #fd7e14;
+      padding-bottom: 5px;
+    }
+
+    .blog-card {
+      background-color: #ffffff;
+      border-left: 6px solid #0d6efd;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+
+    .btn-read {
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .btn-read:hover {
+      background-color: #fd7e14;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 160px;
+      left: 20px;
+      width: 200px;
+    }
+
+    .sidebar a {
+      display: block;
+      margin-bottom: 10px;
+      color: #0d6efd;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      color: #fd7e14;
+    }
+
+    .content {
+      margin-left: 240px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with badge -->
+  <div class="header-container">
+    <div class="badge-box">
+      <img src="D:\CyberMedwinProject\badge.png.PNG" alt="D:\CyberMedwinProject\badge.png.PNG">
+    </div>
+    <div class="header-text">
+      <h1>CyberMedwin Blog Hub</h1>
+      <p>Your hub for cybersecurity</p>
+    </div>
+  </div>
+
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <a href="#malware">Malware Intelligence</a>
+    <a href="#forensics">Digital Forensics</a>
+    <a href="#pentesting">Penetration Testing</a>
+    <a href="#incident">Incident Response</a>
+    <a href="#trends">Cybersecurity Trends</a>
+    <a href="#education">Education & Careers</a>
+    <a href="#advocacy">Messaging & Advocacy</a>
+    <a href="#governance">Governance & Compliance</a>
+    <a href="#iot">IoT & Embedded Security</a>
+    <a href="#cloud">Cloud & DevSecOps</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="search-bar text-center">
+      <input type="text" class="form-control" placeholder="Search by title, section, or year...">
+    </div>
+
+    <!-- Blog Sections -->
+
+    <h4 class="section-title" id="malware">🦠 Malware Intelligence</h4>
+    <div class="blog-card">
+      <h5>Ransomware Evolution & Defense</h5>
+      <p>How encryption-based extortion is changing and what defenders must do.</p>
+      <a href="#" class="btn-read">Read More</a>
+    </div>
+    <div class="blog-card">
+      <h5>Rootkits, Keyloggers & Stealth Threats</h5>
+      <p>Understanding the invisible malware that hides in plain sight.</p>
+      <a href="#" class="btn-read">Read More</a>
+    </div>
+
+    <h4 class="section-title" id="forensics">🔍 Digital Forensics</h4>
+    <div class="blog-card">
+      <h5>Memory Forensics: What RAM Reveals</h5>
+      <p>Live analysis techniques for volatile data and active threats.</p>
+      <a href="#" class="btn-read">Read More</a>
+    </div>
+
+    <h4 class="section-title" id="pentesting">🛡️ Penetration Testing</h4>
+    <div class="blog-card">
+      <h5>Red Team vs Blue Team: Tactical Breakdown</h5>
+      <p>Simulating attacks and defending in real time—how to train both sides.</p>
+      <a href="#" class="btn-read">Read More</a>
+    </div>
+
+    <h4 class="section-title" id="incident">🚨 Incident Response</h4>
+    <div class="blog-card">
+      <h5>Eradication vs Recovery: Strategic Timing</h5>
+      <p>Knowing when to isolate, contain, and rebuild after a breach.</p>
+      <a href="#" class="btn-read">Read More</a>
+    </div>
+
+    <h4 class="section-title" id="trends">🌐 Cybersecurity Trends</h4>
+    <div class="blog-card">
+      <h5>Quantum Threats: Preparing for the Post-Encryption Era</h5>
+      <p>What happens when quantum computing breaks RSA and ECC?</p>
+      <a href="#" class="btn-read">Read More</a>
+    </div>
+
+    <h4 class="section-title" id="education">🎓 Education & Careers</h4>
+    <div class="blog-card">
+      <h5>Cybersecurity Roadmaps for Students</h5>
+      <p>From first steps to specialization—how to build your career path.</p>
+      <a href="#" class="btn-read">Read More</a>
+    </div>
+
+    <h4 class="section-title" id="advocacy">🗣️ Messaging & Advocacy</h4>
+    <div class="blog-card">
+      <h5>Emotional Intelligence in Cybersecurity Training</h5>
+      <p>How empathy and storytelling transform awareness campaigns.</p>
+      <a href="#" class="btn-read">Read More</a>
+    </div>
+
+    <h4 class="section-title" id="governance">📜 Governance & Compliance</h4>
+    <div class="blog-card">
+      <h5>GDPR, NIST, ISO: What You Need to Know</h5>
+      <p>Global standards and how to align your organization with them.</p>
+      <a href="#" class="btn-read">Read More</a>
+    </div>
+
+    <h4 class="section-title" id="iot">📡 IoT & Embedded Security</h4>
+    <div class="blog-card">
+      <h5>Securing Smart Homes & Devices</h5>
+      <p>How to protect everyday tech from silent intrusions.</p>
+      <a href="#" class="btn-read">Read More</a>
+    </div>
+
+    <h4 class="section-title" id="cloud">☁️ Cloud & DevSecOps</h4>
+    <div class="blog-card">
+      <h5>DevSecOps: Security in Every Commit</h5>
+      <p>Embedding security into CI/CD pipelines and developer workflows.</p>
+      <a href="#" class="btn-read">Read More</a>
+    </div>
+  </div>
+
+</body>
+</html>
